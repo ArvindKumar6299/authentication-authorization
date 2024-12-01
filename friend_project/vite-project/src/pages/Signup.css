@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Section */
+  .image-section {
+    display: none;
+    width: 50%;
+    background: url("https://via.placeholder.com/600") center/cover no-repeat;
+  }
+  
+  .form-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Message */
+  p {
+    text-align: center;
+    color: green;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      height: 70vh;
+    }
+  
+    .image-section {
+      display: block;
+    }
+  
+    .form-section {
+      width: 50%;
+      padding: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .form-section {
+      padding: 20px;
+    }
+  }
+  
